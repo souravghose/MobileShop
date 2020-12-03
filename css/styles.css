@@ -1,0 +1,1318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    background-color: #FEFEFE;
+    overflow-x: hidden;
+}
+
+:root {
+    --theme-color: #FF6000;
+    --dark-color: #000000;
+}
+
+button:focus {
+    outline: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+button a:hover {
+    color: #fff;
+}
+
+/* Float right  */
+.fl-r {
+    float: right;
+}
+
+/* three bar toggle menu starts */
+div.menu {
+    width: 35px;
+    height: 5px;
+    background-color: var(--theme-color);
+    margin: 6px 0;
+}
+
+/* three bar toggle menu end */
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--theme-color);
+    text-decoration: none;
+}
+
+nav a {
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 17px;
+    transition: all linear 0.5s;
+}
+
+nav a:hover {
+    color: var(--theme-color) !important;
+}
+
+.mg-right {
+    margin-right: 15px;
+}
+
+.mg-left {
+    margin-left: 15px;
+}
+
+/* header start */
+.header-nav {
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    box-shadow: 0px 0px 20px lightgray;
+}
+
+#logo {
+    color: var(--theme-color);
+    font-weight: 900;
+    font-size: 28px;
+}
+
+.fa-angle-down {
+    margin-left: 10px;
+}
+
+.drop {
+    position: relative;
+    z-index: 1;
+}
+
+.drop ul li a {
+    color: black;
+}
+
+.drop ul li:hover a {
+    color: var(--theme-color);
+}
+
+.drop ul li {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.drop ul li:hover {
+    background-color: white;
+}
+
+.drop:hover .down {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    opacity: 1;
+    top: 44px;
+}
+
+.down {
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    color: black;
+    top: -44px;
+    right: -105px;
+    z-index: -1;
+    height: auto;
+    padding: 10px;
+    min-width: 300px;
+    text-align: center;
+    border-top: 2px solid var(--theme-color);
+    opacity: 0;
+    transition: all linear 0.3s;
+}
+
+.drop1 {
+    position: relative;
+    z-index: 1;
+}
+
+.drop1 ul li a {
+    color: black;
+}
+
+.drop1 ul li:hover a {
+    color: var(--theme-color);
+}
+
+.drop1 ul li {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.drop1 ul li:hover {
+    background-color: white;
+}
+
+.down-category {
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    color: black;
+    top: -44px;
+    right: -105px;
+    z-index: -1;
+    height: auto;
+    padding: 10px;
+    min-width: 300px;
+    text-align: center;
+    border-top: 2px solid var(--theme-color);
+    opacity: 0;
+    transition: all linear 0.3s;
+}
+
+.drop1:hover .down-category {
+    display: block;
+    opacity: 1;
+    top: 44px;
+}
+
+.search-btn {
+    border: 1px solid var(--theme-color);
+}
+
+.search-btn:hover {
+    background-color: var(--theme-color);
+    color: #fff;
+}
+
+/*tooltip start*/
+​.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 150%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+/*tooltip start*/
+/* Modal Start */
+.modal-content {
+    margin-top: 0;
+}
+
+.modal-header {
+    margin-top: 0px;
+    background-color: var(--theme-color);
+    color: #fff;
+    width: 100.2%;
+}
+
+.close {
+    color: #fff;
+    opacity: 1;
+}
+
+.close:hover {
+    color: white;
+}
+
+.btn-primary {
+    margin-top: 10px;
+    width: 100%;
+    background-color: var(--theme-color);
+    border: none;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    background-color: var(--theme-color);
+}
+
+.modal-text {
+    text-align: center;
+    margin-top: 10px !important;
+    margin-bottom: 0;
+}
+
+/* Modal Ends */
+/* section heading start */
+.section-heading {
+    color: var(--theme-color);
+    font-family: 'Heebo', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.section-heading:before {
+    position: absolute;
+    content: '';
+    background: #8f98a1;
+    bottom: -14px;
+    left: 50%;
+    width: 350px;
+    height: 2px;
+    margin-bottom: 5px;
+    transform: translate(-50%);
+}
+
+.sub-section-heading {
+    color: #272647;
+    font-family: 'Heebo', sans-serif;
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+/* Carousel starts */
+.carousel-iphone-phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--dark-color);
+    width: 100%;
+    height: 700px;
+}
+
+.carousel-samsung-phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--dark-color);
+    width: 100%;
+    height: 700px;
+}
+
+.carousel-xiaomi-phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--dark-color);
+    width: 100%;
+    height: 700px;
+}
+
+.carousel-img {
+    margin-right: 50px;
+}
+
+.carousel-information {
+    margin-left: 50px;
+}
+
+.carousel-headline {
+    color: #fff;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: none;
+    margin-bottom: 20px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.carousel-tagline {
+    color: var(--theme-color);
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+}
+
+.slide-left {
+    width: 100%;
+    overflow: hidden;
+    animation-name: slide-left;
+    animation-duration: 1.2s;
+    animation-delay: 0.1s;
+}
+
+.slide-left-carousel-headline {
+    width: 100%;
+    overflow: hidden;
+    animation: slide-left-headline 1s;
+}
+
+@keyframes slide-left {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+@keyframes slide-left-headline {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+.shopnow-btn {
+    background-color: #3d58f3;
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    margin: 10px auto 20px auto;
+    cursor: pointer;
+    transition: all linear 0.4s;
+}
+
+.shopnow-btn:hover {
+    background: var(--theme-color);
+}
+
+.carousel-indicators {
+    z-index: 1;
+}
+
+#carouselExampleIndicators ol li {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.carousel-indicators .active {
+    background-color: var(--theme-color);
+}
+
+/* Carousel Ends */
+/* Brands Name Starts */
+.brand-text {
+    margin-top: 40px;
+    color: var(--dark-color);
+    font-weight: 700;
+    font-family: Android Euclid, Roboto, Helvetica, Arial, sans-serif;
+    letter-spacing: -1px;
+}
+
+.brand-box {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+
+.brand-card {
+    color: black;
+    width: 120px;
+    background: white;
+    font-weight: 600;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    margin-left: 0;
+    border: 1px solid rgb(233, 219, 219);
+    text-align: center;
+    cursor: pointer;
+}
+
+.brand-card a {
+    color: black;
+}
+
+.brand-card:hover {
+    background-color: var(--theme-color);
+    color: white !important;
+}
+
+.brand-card:hover a {
+    color: white;
+}
+
+/* Brands Name Ends */
+/* Moblie price Card  Starts*/
+.products-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flex-card {
+    flex-basis: 350px;
+    background-color: whitesmoke;
+    margin: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition: all linear 1s;
+    /* box-shadow: 2px 2px 5px lightgrey; */
+    box-shadow: 4px 20px 48px lightgrey;
+    position: relative;
+    cursor: pointer;
+}
+
+.flex-card:hover {
+    position: relative;
+    bottom: 15px;
+    cursor: pointer;
+}
+
+.card-img {
+    width: 100%;
+    height: 300px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.product-name {
+    color: var(--theme-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 17px;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.product-name:hover {
+    text-decoration: underline;
+}
+
+.product-price {
+    color: black;
+    text-align: center;
+}
+
+.addtocard-btn {
+    color: white !important;
+    background-color: var(--theme-color);
+    text-transform: uppercase;
+    padding: 10px;
+    width: 50%;
+    margin: 20px auto 20px auto;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none !important;
+    transition: all 0.3s;
+    cursor: pointer;
+    position: relative;
+}
+
+.addtocard-btn a {
+    color: white;
+}
+
+.addtocard-btn:hover {
+    background-color: #3d58f3;
+    text-decoration: none;
+}
+
+/* Labels start */
+.discount-label {
+    color: white;
+    background-color: var(--theme-color);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px 5px;
+    position: absolute;
+    top: 0px;
+    left: 2px;
+}
+
+.latest-label {
+    color: white;
+    font-family: "sans-serif", Tahoma, Verdana, Arial;
+    background-color: rgb(255, 0, 76);
+    width: 20%;
+    text-align: center;
+    padding: 3px;
+    position: absolute;
+    top: 7px;
+    left: 8px;
+    border: none;
+    font-weight: 500;
+    border-radius: 2px;
+}
+
+/* Moblie price Card Ends*/
+/* footer area starts */
+.footer {
+    background-color: #000;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 40px;
+}
+
+.footer-main {
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content {
+    margin-left: 15px;
+}
+
+.footer-main a {
+    color: white;
+    transition: all linear 0.3s;
+}
+
+.footer-main a:hover {
+    color: var(--theme-color);
+}
+
+.footer-link ul {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-link ul li a {
+    margin-right: 15px;
+}
+
+/* footer area ends */
+.prev {
+    background: rgba(0, 0, 0, 0.568);
+    color: white;
+    position: absolute;
+    top: 270px;
+    left: 205px;
+    padding: 8px 25px;
+    cursor: pointer;
+}
+
+.next {
+    background: rgba(0, 0, 0, 0.568);
+    color: white;
+    position: absolute;
+    top: 270px;
+    right: 205px;
+    padding: 8px 25px;
+    cursor: pointer;
+}
+
+.trend-prev {
+    background: rgba(0, 0, 0, 0.568);
+    color: white;
+    position: absolute;
+    top: 270px;
+    left: 205px;
+    padding: 8px 25px;
+    cursor: pointer;
+}
+
+.trend-next {
+    background: rgba(0, 0, 0, 0.568);
+    color: white;
+    position: absolute;
+    top: 270px;
+    right: 205px;
+    padding: 8px 25px;
+    cursor: pointer;
+}
+
+/* Responsive Area starts */
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .down {
+        top: 44px;
+        right: 0px;
+        left: 0px;
+        z-index: 1;
+        max-width: 300px;
+    }
+
+    .drop:hover .disabled-on-hover {
+        visibility: hidden;
+    }
+
+    .drop1 {
+        z-index: 0;
+    }
+
+    .down-category {
+        top: 54px;
+        right: 0px;
+        left: 0px;
+        z-index: -10;
+    }
+
+    .carousel-img {
+        display: none;
+    }
+
+    .carousel-iphone-phone {
+        background: url(../images/iphone_12.png) no-repeat center;
+        height: 500px;
+        width: 100%;
+    }
+
+    .carousel-samsung-phone {
+        background: url(../images/samsung-galaxy-s20-fe-5g-1.png) no-repeat center;
+        height: 500px;
+        width: 100%;
+    }
+
+    .carousel-xiaomi-phone {
+        background: url(../images/RedmiNote8T.png) no-repeat center;
+        height: 500px;
+        width: 100%;
+    }
+
+    .carousel-overlay {
+        background: rgba(0, 0, 0, 0.771);
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carousel-headline {
+        color: #fff;
+        font-weight: 700;
+        font-size: 1.5rem;
+        margin-top: none;
+        margin-bottom: 20px;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+
+    .carousel-tagline {
+        color: var(--theme-color);
+        font-size: 1.2rem;
+        font-weight: 600;
+        font-family: 'Lato', sans-serif;
+    }
+
+    .card-img {
+        height: 250px;
+    }
+
+    .footer-main {
+        display: block;
+        text-align: center;
+    }
+
+    .footer-link {
+        margin-top: 10px;
+    }
+
+    .footer-link ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .footer-link ul li a {
+        text-align: center;
+        font-size: 15px;
+        margin-right: 15px;
+    }
+
+    .prev {
+        background: rgba(0, 0, 0, 0.568);
+        color: white;
+        position: absolute;
+        top: 270px;
+        left: 0px;
+        padding: 8px 25px;
+        cursor: pointer;
+    }
+
+    .next {
+        background: rgba(0, 0, 0, 0.568);
+        color: white;
+        position: absolute;
+        top: 270px;
+        right: 0px;
+        padding: 8px 25px;
+        cursor: pointer;
+    }
+
+    .trend-prev {
+        background: rgba(0, 0, 0, 0.568);
+        color: white;
+        position: absolute;
+        top: 270px;
+        left: 0px;
+        padding: 8px 25px;
+        cursor: pointer;
+    }
+
+    .trend-next {
+        background: rgba(0, 0, 0, 0.568);
+        color: white;
+        position: absolute;
+        top: 270px;
+        right: 0px;
+        padding: 8px 25px;
+        cursor: pointer;
+    }
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    .down {
+        top: 44px;
+        right: 0px;
+        left: 0px;
+        z-index: 1;
+        max-width: 300px;
+    }
+
+    .drop1 {
+        z-index: 0;
+    }
+
+    .down-category {
+        top: 54px;
+        right: 0px;
+        left: 0px;
+        z-index: -10;
+    }
+
+    .carousel-iphone-phone {
+        background: url(../images/iphone_12.png) no-repeat center;
+        height: 500px;
+        width: 100%;
+    }
+
+    .carousel-samsung-phone {
+        background: url(../images/samsung-galaxy-s20-fe-5g-1.png) no-repeat center;
+        height: 500px;
+        width: 100%;
+    }
+
+    .carousel-xiaomi-phone {
+        background: url(../images/RedmiNote8T.png) no-repeat center;
+        height: 500px;
+        width: 100%;
+    }
+
+    .carousel-overlay {
+        background: rgba(0, 0, 0, 0.771);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carousel-headline {
+        color: #fff;
+        font-weight: 700;
+        font-size: 1.5rem;
+        margin-top: none;
+        margin-bottom: 20px;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+
+    .carousel-tagline {
+        color: var(--theme-color);
+        font-size: 1.2rem;
+        font-weight: 600;
+        font-family: 'Lato', sans-serif;
+    }
+
+    .card-img {
+        height: 250px;
+    }
+
+    .footer-main {
+        display: block;
+        text-align: center;
+    }
+
+    .footer-link {
+        margin-top: 10px;
+    }
+
+    .footer-link ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .footer-link ul li a {
+        text-align: center;
+        font-size: 15px;
+        margin-right: 15px;
+    }
+
+    .prev {
+        background: rgba(0, 0, 0, 0.568);
+        color: white;
+        position: absolute;
+        top: 270px;
+        left: 0px;
+        padding: 8px 25px;
+        cursor: pointer;
+    }
+
+    .next {
+        background: rgba(0, 0, 0, 0.568);
+        color: white;
+        position: absolute;
+        top: 270px;
+        right: 0px;
+        padding: 8px 25px;
+        cursor: pointer;
+    }
+
+    .trend-prev {
+        background: rgba(0, 0, 0, 0.568);
+        color: white;
+        position: absolute;
+        top: 270px;
+        left: 0px;
+        padding: 8px 25px;
+        cursor: pointer;
+    }
+
+    .trend-next {
+        background: rgba(0, 0, 0, 0.568);
+        color: white;
+        position: absolute;
+        top: 270px;
+        right: 0px;
+        padding: 8px 25px;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .down {
+        top: 44px;
+        right: 0px;
+        left: 0px;
+        z-index: 1;
+        max-width: 300px;
+    }
+
+    .drop:hover .disabled-on-hover {
+        visibility: hidden;
+    }
+
+    .drop1 {
+        z-index: 0;
+    }
+
+    .down-category {
+        top: 54px;
+        right: 0px;
+        left: 0px;
+        z-index: -10;
+    }
+
+    .carousel-img {
+        display: none;
+    }
+
+    .carousel-iphone-phone {
+        background: url(../images/iphone_12.png) no-repeat center;
+        height: 500px;
+        width: 100%;
+    }
+
+    .carousel-samsung-phone {
+        background: url(../images/samsung-galaxy-s20-fe-5g-1.png) no-repeat center;
+        height: 500px;
+        width: 100%;
+    }
+
+    .carousel-xiaomi-phone {
+        background: url(../images/RedmiNote8T.png) no-repeat center;
+        height: 500px;
+        width: 100%;
+    }
+
+    .carousel-overlay {
+        background: rgba(0, 0, 0, 0.771);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-img {
+        height: 250px;
+    }
+
+    .footer-main {
+        display: block;
+        text-align: center;
+    }
+
+    .footer-link {
+        margin-top: 10px;
+    }
+
+    .footer-link ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .footer-link ul li a {
+        text-align: center;
+        font-size: 15px;
+        margin-right: 15px;
+    }
+
+    .prev {
+        background: rgba(0, 0, 0, 0.568);
+        color: white;
+        position: absolute;
+        top: 270px;
+        left: 0px;
+        padding: 8px 25px;
+        cursor: pointer;
+    }
+
+    .next {
+        background: rgba(0, 0, 0, 0.568);
+        color: white;
+        position: absolute;
+        top: 270px;
+        right: 0px;
+        padding: 8px 25px;
+        cursor: pointer;
+    }
+
+    .trend-prev {
+        background: rgba(0, 0, 0, 0.568);
+        color: white;
+        position: absolute;
+        top: 270px;
+        left: 0px;
+        padding: 8px 25px;
+        cursor: pointer;
+    }
+
+    .trend-next {
+        background: rgba(0, 0, 0, 0.568);
+        color: white;
+        position: absolute;
+        top: 270px;
+        right: 0px;
+        padding: 8px 25px;
+        cursor: pointer;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .down {
+        top: 44px;
+        right: 0px;
+        left: 0px;
+        z-index: 1;
+        max-width: 300px;
+    }
+
+    .drop1 {
+        z-index: 0;
+    }
+
+    .down-category {
+        top: 54px;
+        right: 0px;
+        left: 0px;
+        z-index: -10;
+    }
+
+    .carousel-img {
+        display: none;
+    }
+
+    .carousel-iphone-phone {
+        background: url(../images/iphone_12.png) no-repeat center;
+        height: 500px;
+        width: 100%;
+
+    }
+
+    .carousel-samsung-phone {
+        background: url(../images/samsung-galaxy-s20-fe-5g-1.png) no-repeat center;
+        height: 500px;
+        width: 100%;
+    }
+
+    .carousel-xiaomi-phone {
+        background: url(../images/RedmiNote8T.png) no-repeat center;
+        height: 500px;
+        width: 100%;
+    }
+
+    .carousel-overlay {
+        background: rgba(0, 0, 0, 0.771);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-main {
+        display: block;
+        text-align: center;
+    }
+
+    .footer-link {
+        margin-top: 10px;
+
+    }
+
+    .footer-link ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .footer-link ul li a {
+        text-align: center;
+        font-size: 20px;
+        margin-right: 15px;
+    }
+
+    .prev {
+        background: rgba(0, 0, 0, 0.568);
+        color: white;
+        position: absolute;
+        top: 270px;
+        left: 0px;
+        padding: 8px 25px;
+        cursor: pointer;
+    }
+
+    .next {
+        background: rgba(0, 0, 0, 0.568);
+        color: white;
+        position: absolute;
+        top: 270px;
+        right: 0px;
+        padding: 8px 25px;
+        cursor: pointer;
+    }
+
+    .trend-prev {
+        background: rgba(0, 0, 0, 0.568);
+        color: white;
+        position: absolute;
+        top: 270px;
+        left: 0px;
+        padding: 8px 25px;
+        cursor: pointer;
+    }
+
+    .trend-next {
+        background: rgba(0, 0, 0, 0.568);
+        color: white;
+        position: absolute;
+        top: 270px;
+        right: 0px;
+        padding: 8px 25px;
+        cursor: pointer;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .down {
+        top: 44px;
+        right: 0px;
+        left: 0px;
+        z-index: 1;
+        max-width: 300px;
+    }
+
+    .drop1 {
+        z-index: 0;
+    }
+
+    .down-category {
+        top: 54px;
+        right: 0px;
+        left: 0px;
+        z-index: -10;
+    }
+
+    .nav-link {
+        font-size: 12px;
+    }
+
+    .carousel-img {
+        display: none;
+    }
+
+    .carousel-iphone-phone {
+        background: url(../images/iphone_12.png) no-repeat center;
+        height: 500px;
+        width: 100%;
+    }
+
+    .carousel-samsung-phone {
+        background: url(../images/samsung-galaxy-s20-fe-5g-1.png) no-repeat center;
+        height: 500px;
+        width: 100%;
+    }
+
+    .carousel-xiaomi-phone {
+        background: url(../images/RedmiNote8T.png) no-repeat center;
+        height: 500px;
+        width: 100%;
+    }
+
+    .carousel-overlay {
+        background: rgba(0, 0, 0, 0.771);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .products-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .flex-card {
+        flex-basis: 350px;
+        background-color: whitesmoke;
+        margin: 20px 10px;
+    }
+
+    .footer-main {
+        display: block;
+        text-align: center;
+    }
+
+    .footer-link {
+        margin-top: 10px;
+
+    }
+
+    .footer-link ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .footer-link ul li a {
+        text-align: center;
+        font-size: 22px;
+        margin-right: 15px;
+    }
+
+    .prev {
+        background: rgba(0, 0, 0, 0.568);
+        color: white;
+        position: absolute;
+        top: 270px;
+        left: 0px;
+        padding: 8px 25px;
+        cursor: pointer;
+    }
+
+    .next {
+        background: rgba(0, 0, 0, 0.568);
+        color: white;
+        position: absolute;
+        top: 270px;
+        right: 0px;
+        padding: 8px 25px;
+        cursor: pointer;
+    }
+
+    .trend-prev {
+        background: rgba(0, 0, 0, 0.568);
+        color: white;
+        position: absolute;
+        top: 270px;
+        left: 0px;
+        padding: 8px 25px;
+        cursor: pointer;
+    }
+
+    .trend-next {
+        background: rgba(0, 0, 0, 0.568);
+        color: white;
+        position: absolute;
+        top: 270px;
+        right: 0px;
+        padding: 8px 25px;
+        cursor: pointer;
+    }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .carousel-overlay {
+        background: rgba(0, 0, 0, 0.771);
+        display: flex;
+        align-items: center;
+    }
+}
+
+#latest-phones {
+    position: relative;
+}
+
+#trendingnow {
+    position: relative;
+}
